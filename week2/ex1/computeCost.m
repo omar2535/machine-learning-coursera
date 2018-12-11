@@ -13,10 +13,7 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 % theta is a 2x1 vector
-constant = 1/ (2*m)
-h = (X * theta)
-sum_squared = sum((h - y).^2)
-J = (1 / (2 * m)) * sum_squared
+J = (1 / (2 * m)) * sum(((X * theta) - y).^2)
 % =========================================================================
 
 end
