@@ -10,6 +10,7 @@ def main():
     X = data[:, 0]
     y = data[:, 1]
     m = y.size
+    
     theta = gradient_descent(X, y, m, np.array([0,0]), 0.01, 1500)
     print("theta is", theta)
 
@@ -38,6 +39,11 @@ def gradient_descent(X, y, m, theta, alpha, iterations):
         #     plt.gcf().clear()
     #plt.show()
     return theta
+
+def feature_normalization(X,y):
+    for i in range(X[2].size):
+
+
 
 
 main()
